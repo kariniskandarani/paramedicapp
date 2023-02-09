@@ -10,7 +10,7 @@ export class AppComponent implements OnInit {
   prodData:prodInfo[]=[];
   constructor(){}
   ngOnInit() {
-    fetch('https://paramedic-products.onrender.com/Products')
+    fetch('https://webserver-paramedic.herokuapp.com/Products')
   .then(response => response.json())
   .then((json:any):any =>{
     
